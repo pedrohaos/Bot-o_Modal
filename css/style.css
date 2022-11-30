@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat',sans-serif;
+    background: linear-gradient(45deg, #FFA5B8, #FFC2CD);
+}
+
+.modal{
+    width: 400px;
+    height: 460px;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    transition: .4s;
+}
+
+.modal .modal_header{
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 18px;
+}
+
+.modal .modal_header button{
+    cursor: pointer;
+    font-size: 22px;
+    color: #21202C;
+    border: 1px solid #FFFFFF;
+    background-color: transparent;
+}
+
+.modal .modal_body{
+    text-align: center;
+}
+
+.modal .modal_body img{
+    width: 40%;
+    margin: 10px 0 30px 0;
+}
+
+.modal .modal_body h3{
+    color: #21202C;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.modal .modal_body p{
+    color: #5A586D;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.modal .modal_body button{
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 22px;
+    background-color: #FE425B;
+    color: #FFFFFF;
+    padding: 12px 120px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    letter-spacing: 1px;
+    transition: .4s;
+}
+
+.modal .modal_body button:hover{
+    background-color: #E0344B;
+}
+
+.modal#esconder{
+    opacity: 0;
+    transform: scale(.6);
+    pointer-events: none;
+}
+
+.modal#mostrar{
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: visible;
+}
+
+#botaoMostrar{
+    cursor: pointer;
+    position: absolute;
+    background-color: #21202C;
+    color: #FFFFFF;
+    padding: 14px 22px;
+    font-size: 18px;
+    border-radius: 8px;
+    letter-spacing: .5px;
+}
